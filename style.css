@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Charm&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#000;
+    color:#fff;
+    overflow:hidden;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background:url('images/page-bg.png') no-repeat center center/cover;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+img{
+    display:block;
+    height: 100px;
+
+}
+
+.animated{
+    font-family: 'charm', cursive;
+    margin: 0;
+    padding:0;
+    font-size:6rem;
+    background: url('images/text-bg.png');
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+
+    animation:moveBg;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    -webkit-animation:moveBg;
+    -webkit-animation-duration: 90s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+}
+
+@keyframes moveBg{
+    0%{
+        background-position: 0% 30%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
